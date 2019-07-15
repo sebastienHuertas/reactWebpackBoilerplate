@@ -1,13 +1,13 @@
 # BoilerPlate React | Redux | Webpack | Tests |
 
-## Install :
+### Install :
 
 `yarn`
 
-## Run project :
+### Run project :
 
 `yarn start`
 
-## Test project :
+### Test project :
 
 `yarn test`
