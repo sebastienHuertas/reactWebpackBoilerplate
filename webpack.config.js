@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const glob = require('glob');
 const path = require('path');
 const webpack = require('webpack');
+const Dotenv = require('dotenv-webpack');
 
 const parts = require('./webpack.parts');
 
@@ -56,6 +57,9 @@ const productionConfig = merge(
         chunks: 'initial'
       }
     }
+  },
+  {
+    plugins: [new Dotenv()]
   }
 );
 
@@ -71,7 +75,9 @@ const developmentConfig = merge(
   parts.loadCSS(),
   parts.loadSVG(),
   parts.loadImages(),
-  { plugins: [new webpack.HotModuleReplacementPlugin()] }
+  {
+    plugins: [new Dotenv(), new webpack.HotModuleReplacementPlugin()]
+  }
 );
 
 module.exports = mode => {
