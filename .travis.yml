@@ -7,5 +7,4 @@ cache:
 script:
   - yarn test
   - yarn build
-on:
-  branch: master
+after_success: echo $VARIABLE
