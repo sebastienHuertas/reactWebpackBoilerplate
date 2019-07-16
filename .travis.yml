@@ -7,6 +7,7 @@ cache:
 script:
   - yarn test
   - yarn build
-after_success: echo $VARIABLE
+after_success:
+  - .travis/push.sh
 notifer:
   - contact@sebastien-huertas.fr
