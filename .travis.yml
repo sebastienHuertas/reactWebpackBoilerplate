@@ -3,6 +3,8 @@ sudo:
   - true
 node_js:
   - 'stable'
+before_install:
+  - chmod +x .travis/push.sh
 cache:
   directories:
     - node_modules
