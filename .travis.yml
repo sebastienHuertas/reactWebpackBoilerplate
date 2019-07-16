@@ -8,3 +8,5 @@ script:
   - yarn test
   - yarn build
 after_success: echo $VARIABLE
+notifer:
+  - contact@sebastien-huertas.fr
