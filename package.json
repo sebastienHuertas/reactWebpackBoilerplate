@@ -70,6 +70,7 @@
     "@emotion/styled": "^10.0.7",
     "axios": "^0.18.0",
     "classnames": "^2.2.6",
+    "dotenv-webpack": "^1.7.0",
     "emotion-theming": "^10.0.7",
     "history": "^4.7.2",
     "lodash": "^4.17.11",
@@ -85,6 +86,7 @@
     "redux": "^4.0.1",
     "redux-devtools-extension": "^2.13.8",
     "redux-form": "^8.2.1",
+    "redux-persist": "^5.10.0",
     "redux-thunk": "^2.3.0",
     "reselect": "^4.0.0"
   }
