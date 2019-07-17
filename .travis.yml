@@ -1,11 +1,17 @@
 language: node_js
+sudo:
+  - true
 node_js:
   - 'stable'
+before_install:
+  - chmod +x .travis/push.sh
 cache:
   directories:
     - node_modules
 script:
   - yarn test
   - yarn build
-on:
-  branch: master
+after_success:
+  - .travis/push.sh
+notifer:
+  - contact@sebastien-huertas.fr

@@ -59,7 +59,11 @@ const productionConfig = merge(
     }
   },
   {
-    plugins: [new Dotenv()]
+    plugins: [
+      new Dotenv({
+        path: path.resolve(__dirname, './env')
+      })
+    ]
   }
 );
 
