@@ -11,7 +11,10 @@ cache:
 script:
   - yarn test
   - yarn build
-after_success:
-  - .travis/push.sh
+deploy:
+  provider: script
+  script: bash .travis/push.sh
+  on:
+    branch: travis-config
 notifer:
   - contact@sebastien-huertas.fr
