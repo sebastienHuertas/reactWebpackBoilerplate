@@ -1,5 +1,5 @@
 #!/bin/sh
-ls $TRAVIS_BUILD_DIR
+ls $TRAVIS_BUILD_DIR/dist
 
 ftp -n $DEPLOY_HOST $DEPLOY_PORT << END_SCRIPT
 quote USER $DEPLOY_LOGIN
