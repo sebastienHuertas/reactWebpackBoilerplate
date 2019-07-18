@@ -13,11 +13,11 @@ script:
   - yarn test
   - yarn build
 deploy:
-  provider: script
-  script: bash .travis/push.sh
-  local_dir: dist
-  skip_cleanup: true
-  on:
-    branch: travis-config
+  - provider: script
+    script: bash .travis/push.sh
+    local_dir: dist
+    skip_cleanup: true
+    on:
+      branch: travis-config
 notifer:
   - contact@sebastien-huertas.fr
