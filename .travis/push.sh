@@ -1,4 +1,5 @@
 #!/bin/sh
+
 ftp -n $DEPLOY_HOST $DEPLOY_PORT << END_SCRIPT
 quote USER $DEPLOY_LOGIN
 quote PASS $DEPLOY_PASSWORD
