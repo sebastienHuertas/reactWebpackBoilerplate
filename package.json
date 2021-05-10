@@ -73,7 +73,7 @@
     "dotenv-webpack": "^1.7.0",
     "emotion-theming": "^10.0.7",
     "history": "^4.7.2",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.21",
     "moment": "^2.23.0",
     "prop-types": "^15.6.2",
     "react": "^16.8.6",
